@@ -1,0 +1,158 @@
+<!Doctype html>
+
+<html>
+
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+
+
+    <link rel = "stylesheet" href = "../CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="../Resurse/favicon.png">
+    
+</head>
+<body>
+    
+   
+    <header>
+    
+        <div class = "logo">
+            <img src = "../Resurse/logo.png" class = "logo-image">
+            <h1 class = "logo-text"><span>Totul despre Italia</span></h1>
+        </div>
+
+        
+        <ul class = "nav">
+
+            <li><a href = "index.html">Acasă</a></li>
+            <li><a href = "Istoria Italiei.html">Istorie</a></li>
+            <li><a href = "Geografia Italiei.html">Geografie</a></li>
+            <li><a href = "Contact.html">Contact</a></li>
+
+            <li>
+                <a href = "#">Articole</a>
+
+                <ul class = "dropdown-list">
+                    <li><a href = "./Articles/articol 1.html">Roma</a></li>
+                    <li><a href = "./Articles/articol 2.html">Milano</a></li>
+                    <li><a href = "./Articles/articol 3.html">Veneția</a></li>
+                    <li><a href = "./Articles/articol 4.html">Cinque Terre</a></li>
+                    <li><a href = "./Articles/articol 5.html">Bolonia</a></li>
+                    <li><a href = "./Articles/articol 6.html">Napoli</a></li>
+                </ul>
+
+            </li>
+
+        </ul>
+
+        <button onclick="displayMenu()" class = "menu-button" ><img src = "../Resurse/3-line menu logo.jpeg" class = "menu-toggle"></button>
+
+
+    </header>
+   
+    <div class = "page-wrapper">
+    
+    
+        <section class="contact">
+    
+            <h2>Contactați-ne!</h2>
+    
+            <form action = "#">
+    
+                <div class = "input-box">
+    
+                    <div class = "input-field">
+    
+                        <input type = "text" placeholder = "Nume complet" id = "name"  
+                        class = "item" autocomplete="off" >
+    
+                    </div>
+    
+    
+                    <div class="input-field">
+    
+                        <input type = "text" placeholder = "Adresă de e-mail" id = "email"  
+                        class = "item" autocomplete = "off" >
+    
+                    </div>
+    
+                </div>
+    
+    
+                <div class = "input-box">
+    
+                    <div class = "input-field">
+    
+                        <input type = "text" placeholder = "Număr de telefon" id = "phone"  
+                        class = "item" autocomplete = "off" >
+                        
+                    </div>
+    
+    
+                    <div class="input-field">
+    
+                        <input type = "text" placeholder = "Subiect" id = "subject"  
+                        class = "item" autocomplete = "off" >
+    
+                    </div>
+    
+                </div>
+    
+    
+                <div class="textarea-field">
+    
+                    <textarea id = "message" cols = "30" rows = "10" placeholder = "Mesajul dumneavoastră" 
+                    class = "item" autocomplete = "off"></textarea>
+                    
+                </div>    
+    
+    
+                <button id = "submit-button" type = "submit" onclick = "saveFormData()">Trimite mesajul</button>
+    
+            </form>
+    
+        </section>
+    
+    
+        <h1 class = "find-us-here">Ne găsiți aici!</h1>
+    
+        <!-- map -->
+        <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.884114398441!2d26.097011775701!3d44.435539301482414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFacultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e0!3m2!1sro!2sro!4v1717529074836!5m2!1sro!2sro" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </div>
+   
+     <!-- footer -->
+     <div class = "footer" >
+
+        <div class="footer-content">
+            <div class="footer-section-about">
+                Acest blog a fost pentru a oferi unui turist toate informațiile de care acesta ar avea nevoie pentru a vizita Italia.
+            </div>
+
+            <ul class="footer-section-links">
+                <li><a href = "https://www.facebook.com/fmi.ub"><img src = "../Resurse/facebook-icon.jpg" class = "social-media-icon"></a></li>
+                <li><a href = "https://www.instagram.com/asmi.ub/"><img src = "../Resurse/instagram-icon.png" class = "social-media-icon"></a></li>
+             </ul>
+          
+            <div class="footer-about-2">
+                E-mail: razvan-alexandru.anghel@s.unibuc.ro <br>
+                Telefon: +40 712 345 678
+            </div>
+
+        </div>
+
+         <div class="footer-bottom">Realizat de Anghel Răzvan-Alexandru, Facultatea de Matematică și Informatică, Universitatea din București</div>
+
+     </div>
+
+     <script src = "../Java Script/contact.js"></script>
+    
+</body>
+
+</html>
+    
